@@ -1,0 +1,36 @@
+.about-copy {
+  text-align: left;
+  text-indent: 2em;
+  line-height: 2;
+}
+
+:host-context(html:not([data-theme='dark'])) .about-copy-panel {
+  position: relative;
+  margin-top: 2rem;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border: 1px solid rgb(29 78 216 / 14%);
+  border-radius: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 1rem 2.5rem rgb(15 23 42 / 9%), 0 0.2rem 0.8rem rgb(124 58 237 / 8%);
+}
+
+:host-context(html:not([data-theme='dark'])) .about-copy-panel::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #1d4ed8 0%, #7c3aed 100%);
+  content: '';
+}
+
+:host-context(html:not([data-theme='dark'])) .about-copy-panel::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 0 0 1.5rem 1.5rem;
+  background: linear-gradient(90deg, #7c3aed 0%, #dc2626 100%);
+  content: '';
+}

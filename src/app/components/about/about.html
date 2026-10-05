@@ -2,18 +2,20 @@
   <div class="container px-5">
     <div class="row gx-5 justify-content-center">
       <div class="col-xxl-8">
-        <div class="text-center my-5">
-          <h2 class="display-5 fw-bolder">
+        <div class="my-5">
+          <h2 class="display-5 fw-bolder text-center">
             <span class="text-gradient d-inline">{{ languageService.t('about.title') }}</span>
           </h2>
 
-          <p class="lead fw-light mb-4">
-            {{ languageService.t('about.lead') }}
-          </p>
+          <div class="about-copy-panel">
+            <p class="lead fw-light about-copy mb-4">
+              {{ languageService.t('about.lead') }}
+            </p>
 
-          <p class="lead fw-light text-muted mb-0">
-            {{ languageService.t('about.body') }}
-          </p>
+            <p class="lead fw-light text-muted about-copy mb-0">
+              {{ languageService.t('about.body') }}
+            </p>
+          </div>
         </div>
       </div>
     </div>

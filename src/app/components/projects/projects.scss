@@ -34,6 +34,10 @@
   transform: scale(1.015);
 }
 
+#proyectos p {
+  line-height: 2;
+}
+
 :host-context(html[data-theme='dark']) .project-preview-link {
   background: #202b3d;
 }
