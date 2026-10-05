@@ -1,59 +1,93 @@
-# PortfolioJdc
+# Juan David Cuero — Full-Stack Developer Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.1.
+A responsive bilingual portfolio built with Angular to present my experience, education, skills, and projects. The site opens in English and lets visitors switch to Spanish.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- English and Spanish language selector
+- Light and dark themes
+- Responsive layout and section navigation
+- Scroll reveal and subtle hover animations, with reduced-motion support
+- Technology icons in the skills section
+- English and Spanish CV downloads
+- Contact links for email, GitHub, LinkedIn, and WhatsApp
+- Project showcase with a live link to the Cross Way Center platform
 
-```bash
-ng serve
-```
+## Built with
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Angular 21 and TypeScript
+- SCSS
+- Bootstrap 5 and Bootstrap Icons
+- Devicon
 
-## Code scaffolding
+## Run locally
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+Prerequisites: Node.js and npm.
 
 ```bash
-ng build
+npm install
+npm start
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Open `http://localhost:4200/` in your browser. To create a production build:
 
 ```bash
-ng test
+npm run build
 ```
 
-## Running end-to-end tests
+## Featured project
 
-For end-to-end (e2e) testing, run:
+[Cross Way Center — live website](https://cross-way-center-tulua.web.app)
+
+## Connect
+
+- [GitHub](https://github.com/jcuero24)
+- [LinkedIn](https://www.linkedin.com/in/juan-david-cuero-gamboa-1026963a9/)
+
+---
+
+# Juan David Cuero — Portafolio de desarrollador Full-Stack
+
+Portafolio adaptable y bilingüe, desarrollado con Angular para presentar mi experiencia, formación, habilidades y proyectos. El sitio se abre en inglés y permite cambiar a español.
+
+## Funcionalidades
+
+- Selector de idioma inglés y español
+- Temas claro y oscuro
+- Diseño adaptable y navegación por secciones
+- Animaciones al desplazarse y al pasar el cursor, con soporte para movimiento reducido
+- Iconos de tecnologías en la sección de habilidades
+- Descarga del CV en inglés y español
+- Enlaces de contacto por correo, GitHub, LinkedIn y WhatsApp
+- Muestra de proyectos con enlace a la plataforma de Cross Way Center
+
+## Tecnologías
+
+- Angular 21 y TypeScript
+- SCSS
+- Bootstrap 5 y Bootstrap Icons
+- Devicon
+
+## Ejecutar localmente
+
+Requisitos: Node.js y npm.
 
 ```bash
-ng e2e
+npm install
+npm start
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Abre `http://localhost:4200/` en el navegador. Para generar una compilación de producción:
 
-## Additional Resources
+```bash
+npm run build
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Proyecto destacado
+
+[Cross Way Center — sitio web](https://cross-way-center-tulua.web.app)
+
+## Contacto
+
+- [GitHub](https://github.com/jcuero24)
+- [LinkedIn](https://www.linkedin.com/in/juan-david-cuero-gamboa-1026963a9/)
