@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 site-navbar" [class.nav-hidden]="navHidden()">
   <div class="container px-5">
     <a class="navbar-brand" href="#inicio">
-      <span class="fw-bolder brand-label">JDC <span class="brand-role">· {{ languageService.t('nav.brandRole') }}</span></span>
+      <img class="brand-logo" src="/android-chrome-192x192.png" alt="JDC">
     </a>
 
     <div class="navbar-tools d-flex align-items-center gap-2 ms-auto me-2">
@@ -39,13 +39,13 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-        <li class="nav-item"><a class="nav-link" href="#inicio">{{ languageService.t('nav.home') }}</a></li>
-        <li class="nav-item"><a class="nav-link" href="#sobre-mi">{{ languageService.t('nav.about') }}</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experiencia">{{ languageService.t('nav.experience') }}</a></li>
-        <li class="nav-item"><a class="nav-link" href="#proyectos">{{ languageService.t('nav.projects') }}</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contacto">{{ languageService.t('nav.contact') }}</a></li>
-        <li class="nav-item"><a class="nav-link" href="#educacion">{{ languageService.t('nav.education') }}</a></li>
-        <li class="nav-item"><a class="nav-link" href="#habilidades">{{ languageService.t('nav.skills') }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#inicio" (click)="closeMenu()">{{ languageService.t('nav.home') }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre-mi" (click)="closeMenu()">{{ languageService.t('nav.about') }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experiencia" (click)="closeMenu()">{{ languageService.t('nav.experience') }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#educacion" (click)="closeMenu()">{{ languageService.t('nav.education') }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#habilidades" (click)="closeMenu()">{{ languageService.t('nav.skills') }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proyectos" (click)="closeMenu()">{{ languageService.t('nav.projects') }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto" (click)="closeMenu()">{{ languageService.t('nav.contact') }}</a></li>
       </ul>
     </div>
   </div>

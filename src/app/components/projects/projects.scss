@@ -12,6 +12,24 @@
   transition: transform 220ms ease;
 }
 
+.portfolio-preview-frame {
+  display: flex;
+  height: 13rem;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+  background-color: #fff;
+}
+
+.portfolio-preview-image {
+  display: block;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .project-preview-link:hover .project-preview {
   transform: scale(1.015);
 }

@@ -30,6 +30,14 @@ export class Navbar {
     this.languageService.toggle();
   }
 
+  closeMenu(): void {
+    const menu = document.getElementById('navbarSupportedContent');
+    if (!menu?.classList.contains('show')) return;
+
+    menu.classList.remove('show');
+    document.querySelector('.navbar-toggler')?.setAttribute('aria-expanded', 'false');
+  }
+
   @HostListener('window:scroll')
   onWindowScroll(): void {
     const currentY = window.scrollY;

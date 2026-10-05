@@ -25,6 +25,11 @@ html[data-theme='dark'] {
   background: linear-gradient(135deg, #1d4ed8 0%, #dc2626 100%) !important;
 }
 
+.profile .profile-img {
+  max-height: 28rem;
+  image-rendering: auto;
+}
+
 .text-gradient {
   background: linear-gradient(110deg, #1d4ed8 0%, #dc2626 100%);
   background-clip: text;
@@ -191,29 +196,6 @@ html[data-theme='dark'] .navbar-light .navbar-nav .nav-link,
 html[data-theme='dark'] .navbar-light .navbar-brand,
 html[data-theme='dark'] footer a {
   color: #e5e7eb;
-}
-
-.brand-label {
-  color: #4f46e5;
-}
-
-.brand-role {
-  font-weight: 600;
-  font-size: 0.88em;
-}
-
-html[data-theme='dark'] .brand-label {
-  color: #f8fafc;
-}
-
-html[data-theme='dark'] .brand-role {
-  color: #cbd5e1;
-}
-
-@media (max-width: 575.98px) {
-  .brand-role {
-    display: none;
-  }
 }
 
 html[data-theme='dark'] .tech-chip {
