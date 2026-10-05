@@ -1,0 +1,35 @@
+<section class="py-5" id="contacto" appRevealOnScroll>
+  <div class="container px-5">
+    <div class="bg-light rounded-4 py-5 px-4 px-md-5">
+      <div class="text-center mb-5">
+        <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3">
+          <i class="bi bi-envelope"></i>
+        </div>
+        <h2 class="fw-bolder">{{ languageService.t('contact.title') }}</h2>
+        <p class="lead fw-normal text-muted mb-0">
+          {{ languageService.t('contact.subtitle') }}
+        </p>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+        <a
+          class="btn btn-primary btn-lg px-4"
+          href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=juancuero248%40gmail.com&amp;su=Portfolio%20contact"
+          target="_blank"
+          rel="noopener noreferrer">
+          <i class="bi bi-envelope me-2"></i>
+          {{ languageService.t('contact.email') }}
+        </a>
+
+        <a
+          class="btn btn-outline-dark btn-lg px-4"
+          href="https://github.com/jcuero24"
+          target="_blank"
+          rel="noopener noreferrer">
+          <i class="bi bi-github me-2"></i>
+          {{ languageService.t('contact.github') }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

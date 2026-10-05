@@ -1,0 +1,66 @@
+<header class="py-5" id="inicio" appRevealOnScroll>
+  <div class="container px-5 pb-5">
+    <div class="row gx-5 align-items-center">
+      <div class="col-xxl-5">
+        <div class="text-center text-xxl-start hero-copy">
+          <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
+            <div class="text-uppercase">{{ languageService.t('home.badge') }}</div>
+          </div>
+
+          <div class="fs-3 fw-light text-muted">
+            {{ languageService.t('home.greeting') }}
+          </div>
+
+          <h1 class="display-3 fw-bolder mb-5">
+            <span class="text-gradient d-inline">
+              {{ languageService.t('home.role') }}
+            </span>
+          </h1>
+
+          <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+            <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="#experiencia">
+              {{ languageService.t('home.experience') }}
+            </a>
+            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="#proyectos">
+              {{ languageService.t('home.projects') }}
+            </a>
+          </div>
+
+          <div class="dropend dropdown cv-download d-flex justify-content-center justify-content-xxl-start">
+            <button
+              class="btn btn-outline-primary btn-sm rounded-pill px-3 dropdown-toggle cv-download-trigger"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="bi bi-download me-2" aria-hidden="true"></i>
+              {{ languageService.t('home.downloadCv') }}
+            </button>
+            <ul class="dropdown-menu cv-download-menu">
+              <li>
+                <a class="dropdown-item" href="/assets/Juan_Cuero_CV_ENG.pdf" download="Juan_Cuero_CV_ENG.pdf">
+                  <i class="bi bi-translate me-2" aria-hidden="true"></i>{{ languageService.t('home.cvEnglish') }}
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/assets/Juan_Cuero_CV_ESP.pdf" download="Juan_Cuero_CV_ESP.pdf">
+                  <i class="bi bi-translate me-2" aria-hidden="true"></i>{{ languageService.t('home.cvSpanish') }}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xxl-7">
+        <div class="d-flex justify-content-center mt-5 mt-xxl-0 hero-visual">
+          <div class="profile bg-gradient-primary-to-secondary">
+            <img
+              class="profile-img"
+              src="/assets/Profile%20-%20Photo%20(1).png"
+              [attr.alt]="languageService.t('home.imageAlt')">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

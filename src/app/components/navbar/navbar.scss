@@ -1,0 +1,43 @@
+.site-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+  box-shadow: 0 0.25rem 1rem rgb(15 23 42 / 7%);
+}
+
+.site-navbar.nav-hidden {
+  transform: translateY(-110%);
+}
+
+.navbar-tools {
+  order: 1;
+}
+
+.site-navbar .navbar-toggler {
+  order: 2;
+}
+
+.site-navbar .navbar-collapse {
+  order: 3;
+}
+
+@media (min-width: 992px) {
+  .navbar-tools {
+    order: 2;
+  }
+
+  .site-navbar .navbar-toggler {
+    order: 3;
+  }
+
+  .site-navbar .navbar-collapse {
+    order: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-navbar {
+    transition: none;
+  }
+}

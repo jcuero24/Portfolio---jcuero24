@@ -1,0 +1,27 @@
+.project-preview-link {
+  display: block;
+  overflow: hidden;
+  background: #f8fafc;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.project-preview {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 220ms ease;
+}
+
+.project-preview-link:hover .project-preview {
+  transform: scale(1.015);
+}
+
+:host-context(html[data-theme='dark']) .project-preview-link {
+  background: #202b3d;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-preview {
+    transition: none;
+  }
+}

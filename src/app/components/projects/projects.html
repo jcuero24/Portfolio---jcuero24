@@ -1,0 +1,85 @@
+<section class="py-5" id="proyectos" appRevealOnScroll>
+  <div class="container px-5 mb-5">
+    <div class="text-center mb-5">
+      <h2 class="display-5 fw-bolder">
+        <span class="text-gradient d-inline">{{ languageService.t('projects.title') }}</span>
+      </h2>
+    </div>
+
+    <div class="row gx-5 justify-content-center gy-4">
+      <div class="col-lg-11 col-xl-9">
+        <div class="card shadow rounded-4 border-0">
+          <a
+            class="project-preview-link"
+            href="https://cross-way-center-tulua.web.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            [attr.aria-label]="languageService.t('projects.openDemo')">
+            <img
+              class="project-preview rounded-top-4"
+              src="/assets/cross-way-center-preview.png"
+              [attr.alt]="languageService.t('projects.imageAlt')">
+          </a>
+          <div class="card-body p-5">
+            <div class="d-flex flex-column gap-3">
+              <div>
+                <span class="badge bg-gradient-primary-to-secondary text-white">
+                  {{ languageService.t('projects.badge') }}
+                </span>
+              </div>
+
+              <h3 class="fw-bolder mb-0">
+                {{ languageService.t('projects.name') }}
+              </h3>
+
+              <p class="text-muted mb-0">
+                {{ languageService.t('projects.description') }}
+              </p>
+
+              <p class="small fw-bolder mb-0">
+                Angular · NestJS · Firebase Firestore · Bootstrap
+              </p>
+
+              <div>
+                <a
+                  class="btn btn-primary"
+                  href="https://cross-way-center-tulua.web.app"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="bi bi-box-arrow-up-right me-2" aria-hidden="true"></i>
+                  {{ languageService.t('projects.openDemo') }}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-11 col-xl-9">
+        <div class="card shadow rounded-4 border-0">
+          <div class="card-body p-5">
+            <div class="d-flex flex-column gap-3">
+              <div>
+                <span class="badge bg-gradient-primary-to-secondary text-white">
+                  {{ languageService.t('projects.portfolioBadge') }}
+                </span>
+              </div>
+
+              <h3 class="fw-bolder mb-0">
+                {{ languageService.t('projects.portfolioName') }}
+              </h3>
+
+              <p class="text-muted mb-0">
+                {{ languageService.t('projects.portfolioDescription') }}
+              </p>
+
+              <p class="small fw-bolder mb-0">
+                Angular · TypeScript · SCSS · Bootstrap
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

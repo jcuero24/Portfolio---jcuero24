@@ -1,1 +1,281 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bs-primary: #1d4ed8;
+  --bs-primary-rgb: 29, 78, 216;
+  --bs-secondary: #dc2626;
+  --bs-secondary-rgb: 220, 38, 38;
+  --bs-link-color: #1d4ed8;
+  --bs-link-hover-color: #1e40af;
+  --bs-code-color: #b91c1c;
+}
+
+html[data-theme='dark'] {
+  --bs-primary: #7db2ff;
+  --bs-primary-rgb: 125, 178, 255;
+  --bs-secondary: #f28c9d;
+  --bs-secondary-rgb: 242, 140, 157;
+  --bs-link-color: #7db2ff;
+  --bs-link-hover-color: #a8ccff;
+}
+
+.bg-gradient-primary-to-secondary {
+  background: linear-gradient(135deg, #1d4ed8 0%, #dc2626 100%) !important;
+}
+
+.text-gradient {
+  background: linear-gradient(110deg, #1d4ed8 0%, #dc2626 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html[data-theme='dark'] .text-gradient {
+  background-image: linear-gradient(110deg, #7db2ff 0%, #f28c9d 100%);
+}
+
+body {
+  transition: background-color 220ms ease, color 220ms ease;
+}
+
+[appRevealOnScroll] {
+  opacity: 0;
+  transform: translateY(1.5rem);
+  transition: opacity 650ms ease, transform 650ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+[appRevealOnScroll].is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card,
+.tech-chip,
+.btn {
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 2rem rgb(33 37 41 / 12%) !important;
+}
+
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.tech-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid rgb(108 117 125 / 18%);
+  border-radius: 999px;
+  background: #fff;
+  color: #343a40;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.tech-chip i {
+  font-size: 1.25rem;
+}
+
+.tech-chip:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1rem rgb(33 37 41 / 12%);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.cv-download-menu {
+  min-width: 13rem;
+  box-shadow: 0 0.75rem 1.5rem rgb(15 23 42 / 16%);
+}
+
+html[data-theme='dark'] .cv-download-trigger {
+  border-color: #a8ccff;
+  color: #12233c;
+  background-color: #a8ccff;
+}
+
+html[data-theme='dark'] .cv-download-trigger:hover,
+html[data-theme='dark'] .cv-download-trigger:focus {
+  border-color: #d5e6ff;
+  color: #0f172a;
+  background-color: #d5e6ff;
+}
+
+html[data-theme='dark'] .cv-download-menu {
+  border-color: #42516a;
+  background-color: #202b3d;
+}
+
+html[data-theme='dark'] .cv-download-menu .dropdown-item {
+  color: #e5e7eb;
+}
+
+html[data-theme='dark'] .cv-download-menu .dropdown-item:hover,
+html[data-theme='dark'] .cv-download-menu .dropdown-item:focus {
+  color: #fff;
+  background-color: #334155;
+}
+
+html[data-theme='dark'] body {
+  background-color: #111827;
+  color: #e5e7eb;
+}
+
+html[data-theme='dark'] .navbar,
+html[data-theme='dark'] footer,
+html[data-theme='dark'] .card {
+  background-color: #182235 !important;
+  color: #e5e7eb;
+}
+
+html[data-theme='dark'] .bg-light,
+html[data-theme='dark'] .bg-white {
+  background-color: #202b3d !important;
+}
+
+html[data-theme='dark'] .text-muted,
+html[data-theme='dark'] .small.text-muted {
+  color: #d1d9e6 !important;
+}
+
+html[data-theme='dark'] .text-primary {
+  color: #7db2ff !important;
+}
+
+html[data-theme='dark'] .text-secondary {
+  color: #f28c9d !important;
+}
+
+.theme-toggle {
+  border: 1px solid #64748b;
+  color: #334155;
+  background-color: #fff;
+}
+
+.theme-toggle:hover {
+  color: #1d4ed8;
+  border-color: #1d4ed8;
+  background-color: #eff6ff;
+}
+
+html[data-theme='dark'] .theme-toggle {
+  color: #fff;
+  border-color: #60a5fa;
+  background: #2563eb;
+  box-shadow: 0 0 0 2px rgb(96 165 250 / 18%);
+}
+
+html[data-theme='dark'] .theme-toggle:hover {
+  color: #fff;
+  border-color: #93c5fd;
+  background: #1d4ed8;
+}
+
+html[data-theme='dark'] .bg-gradient-primary-to-secondary .text-white,
+html[data-theme='dark'] .badge.bg-gradient-primary-to-secondary {
+  color: #fff !important;
+}
+
+html[data-theme='dark'] .navbar-light .navbar-nav .nav-link,
+html[data-theme='dark'] .navbar-light .navbar-brand,
+html[data-theme='dark'] footer a {
+  color: #e5e7eb;
+}
+
+.brand-label {
+  color: #4f46e5;
+}
+
+.brand-role {
+  font-weight: 600;
+  font-size: 0.88em;
+}
+
+html[data-theme='dark'] .brand-label {
+  color: #f8fafc;
+}
+
+html[data-theme='dark'] .brand-role {
+  color: #cbd5e1;
+}
+
+@media (max-width: 575.98px) {
+  .brand-role {
+    display: none;
+  }
+}
+
+html[data-theme='dark'] .tech-chip {
+  border-color: #42516a;
+  background-color: #202b3d;
+  color: #e5e7eb;
+}
+
+html[data-theme='dark'] .btn-outline-dark {
+  border-color: #d1d5db;
+  color: #e5e7eb;
+}
+
+html[data-theme='dark'] .btn-primary {
+  --bs-btn-bg: #1d4ed8;
+  --bs-btn-border-color: #1d4ed8;
+  --bs-btn-hover-bg: #1e40af;
+  --bs-btn-hover-border-color: #1e40af;
+  --bs-btn-color: #fff;
+}
+
+.hero-copy {
+  animation: gentle-float 5.5s ease-in-out infinite;
+}
+
+.hero-visual {
+  animation: gentle-float 5.5s ease-in-out infinite;
+}
+
+@keyframes gentle-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+html[data-theme='dark'] .navbar-toggler {
+  border-color: #64748b;
+}
+
+html[data-theme='dark'] .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+
+  [appRevealOnScroll] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .hero-copy,
+  .hero-visual {
+    animation: none;
+  }
+}

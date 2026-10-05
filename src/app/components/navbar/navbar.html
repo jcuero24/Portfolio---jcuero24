@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 site-navbar" [class.nav-hidden]="navHidden()">
+  <div class="container px-5">
+    <a class="navbar-brand" href="#inicio">
+      <span class="fw-bolder brand-label">JDC <span class="brand-role">· {{ languageService.t('nav.brandRole') }}</span></span>
+    </a>
+
+    <div class="navbar-tools d-flex align-items-center gap-2 ms-auto me-2">
+      <button
+        class="btn btn-outline-secondary btn-sm rounded-pill px-2 px-sm-3 language-toggle"
+        type="button"
+        (click)="toggleLanguage()"
+        [attr.aria-label]="languageService.t('nav.changeLanguage')"
+        [attr.title]="languageService.t('nav.changeLanguage')">
+        <i class="bi bi-translate" aria-hidden="true"></i>
+        <span class="ms-sm-2">{{ languageService.current() === 'es' ? 'EN' : 'ES' }}</span>
+      </button>
+
+      <button
+        class="btn theme-toggle btn-sm rounded-pill px-2 px-sm-3"
+        type="button"
+        (click)="toggleTheme()"
+        [attr.aria-label]="languageService.t(darkMode() ? 'nav.enableLight' : 'nav.enableDark')"
+        [attr.title]="languageService.t(darkMode() ? 'nav.lightMode' : 'nav.darkMode')">
+        <i class="bi" [class.bi-sun-fill]="darkMode()" [class.bi-moon-stars-fill]="!darkMode()" aria-hidden="true"></i>
+        <span class="ms-sm-2 d-none d-sm-inline">{{ languageService.t(darkMode() ? 'nav.lightMode' : 'nav.darkMode') }}</span>
+      </button>
+    </div>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+          [attr.aria-label]="languageService.t('nav.openMenu')">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+        <li class="nav-item"><a class="nav-link" href="#inicio">{{ languageService.t('nav.home') }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre-mi">{{ languageService.t('nav.about') }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experiencia">{{ languageService.t('nav.experience') }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proyectos">{{ languageService.t('nav.projects') }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">{{ languageService.t('nav.contact') }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#educacion">{{ languageService.t('nav.education') }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#habilidades">{{ languageService.t('nav.skills') }}</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
